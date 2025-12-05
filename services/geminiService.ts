@@ -1,11 +1,10 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 import { AdviceResponse } from '../types';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export const getDailyAdvice = async (solarDate: string, lunarDate: string): Promise<AdviceResponse> => {
   try {
+    // Initialize here to prevent top-level execution crashes
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     const model = "gemini-2.5-flash";
     const prompt = `
       Bạn là một người bạn đồng hành thông thái, hướng thiện. Hãy đưa ra lời khuyên cho ngày:
