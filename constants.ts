@@ -1,3 +1,4 @@
+
 export const WEEKDAYS = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
 export const FULL_WEEKDAYS = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
 
@@ -20,9 +21,11 @@ export const LUNAR_HOLIDAYS: Record<string, string> = {
   '2-1': 'Tết Nguyên Đán',
   '3-1': 'Tết Nguyên Đán',
   '15-1': 'Tết Nguyên Tiêu',
+  '3-3': 'Tết Hàn Thực',
   '10-3': 'Giỗ Tổ Hùng Vương',
   '15-4': 'Lễ Phật Đản',
   '5-5': 'Tết Đoan Ngọ',
+  '7-7': 'Lễ Thất Tịch',
   '15-7': 'Lễ Vu Lan',
   '15-8': 'Tết Trung Thu',
   '23-12': 'Ông Công Ông Táo',

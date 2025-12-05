@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { CalendarDay, AdviceResponse } from '../types';
 import { formatDateFull } from '../utils/dateUtils';
@@ -30,7 +29,7 @@ const DetailPanel: React.FC<DetailPanelProps> = ({ day }) => {
   if (!day) return <div className="hidden lg:block w-96 p-6 text-center text-slate-400">Chọn một ngày để xem chi tiết</div>;
 
   return (
-    <div className="w-full lg:w-[400px] bg-white rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full">
+    <div className="w-full lg:w-[400px] bg-white rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full animate-fade-in" key={day.solarDate.toISOString()}>
       {/* Header Color Block */}
       <div className={`p-6 text-white rounded-t-2xl relative overflow-hidden ${day.holidays.length > 0 || day.isWeekend ? 'bg-red-500' : 'bg-blue-600'}`}>
         <div className="absolute top-0 right-0 p-4 opacity-10">
@@ -85,7 +84,7 @@ const DetailPanel: React.FC<DetailPanelProps> = ({ day }) => {
                 <div className="h-4 bg-slate-100 rounded w-5/6"></div>
             </div>
         ) : advice ? (
-            <div className="space-y-6">
+            <div className="space-y-6 animate-fade-in">
                 <div className="bg-purple-50 p-4 rounded-xl text-purple-900 italic text-sm border border-purple-100">
                     "{advice.quote}"
                 </div>
