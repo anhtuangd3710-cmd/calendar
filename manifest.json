@@ -1,6 +1,7 @@
+
 {
   "name": "Lịch Vạn Niên AI",
-  "short_name": "Lịch VN",
+  "short_name": "Lịch Vạn Niên",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#f8fafc",

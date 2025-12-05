@@ -1,8 +1,10 @@
+
 import React, { useState, useMemo } from 'react';
 import Header from './components/Header';
 import CalendarGrid from './components/CalendarGrid';
 import YearGrid from './components/YearGrid';
 import DetailPanel from './components/DetailPanel';
+import InstallPrompt from './components/InstallPrompt';
 import { getCalendarMonth, getLunarDate, checkHolidays } from './utils/dateUtils';
 import { CalendarDay, ViewMode } from './types';
 
@@ -147,7 +149,8 @@ const App: React.FC = () => {
     : `year-${currentDate.getFullYear()}`;
 
   return (
-    <div className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-900">
+    <div className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans text-slate-900 pb-24 md:pb-8">
+      <InstallPrompt />
       <div className="max-w-7xl mx-auto">
         <Header 
           currentDate={currentDate} 
