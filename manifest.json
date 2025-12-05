@@ -1,8 +1,8 @@
-
 {
   "name": "Lịch Vạn Niên AI",
   "short_name": "Lịch Vạn Niên",
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#ef4444",

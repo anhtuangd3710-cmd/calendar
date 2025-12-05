@@ -1,8 +1,8 @@
 // Service Worker for Offline support
-const CACHE_NAME = 'lich-van-nien-v1';
+const CACHE_NAME = 'lich-van-nien-v2';
 const ASSETS_TO_CACHE = [
-  './',
-  './index.html',
+  '/',
+  '/index.html',
 ];
 
 // Install event
